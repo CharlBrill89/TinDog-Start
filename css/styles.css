@@ -24,7 +24,7 @@ h2 {
 }
 
 .container-fluid {
-  padding: 0% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -55,7 +55,9 @@ h2 {
 /* Title image */
 .title-image {
   transform: rotate(25deg);
-  width: 60%;
+  width: 20%;
+  position: absolute;
+  right: 30%;
 }
 
 /* Feature section */
@@ -65,6 +67,9 @@ h2 {
   text-align: center;
   line-height: 1.5;
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  /* z-index: 1; */
 }
 
 .feature-icons {
@@ -129,8 +134,54 @@ h2 {
 /* .card{
   height: 50px;
 } */
-
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+
+/* --- CALL TO ACTION  & FOOTER--- */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  /* margin: 20px 120px; */
+}
+
+#footer {
+  padding: 7% 15%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-icons {
+  color: #1C1F23;
+  /* margin: 0 20px; */
+  padding: 20px 10px;
+}
+
+.footer-copyright {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+
+@@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
